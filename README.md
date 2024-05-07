@@ -17,7 +17,7 @@ npm run start
 In a new shell:
 
 ```bash
-curl --location 'localhost:3000/graphql' \
+curl --location '127.0.0.1:3000/graphql' \
 --header 'Content-Type: application/json' \
 --data '{"query":"query GetRecipes {\n  # returning request scoped recipes list from `RecipeService`\n  # which is empty for every request (`recipes: Recipe[] = []`)\n  recipes {\n    title\n    description\n  }\n}","variables":{}}'
 ```
@@ -41,7 +41,7 @@ npm run start
 In a new shell:
 
 ```bash
-curl --location 'localhost:3000/graphql' \
+curl --location '127.0.0.1:3000/graphql' \
 --header 'Content-Type: application/json' \
 --data '{"query":"query GetRecipes {\n  # returning request scoped recipes list from `RecipeService`\n  # which is empty for every request (`recipes: Recipe[] = []`)\n  recipes {\n    title\n    description\n  }\n}","variables":{}}'
 ```
